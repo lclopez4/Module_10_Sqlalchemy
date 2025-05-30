@@ -1,1 +1,10 @@
 # Module_10_Sqlalchemy
+This project is a Flask-based API that serves climate data for the state of Hawaii. The source data is stored in a SQLite database named hawaii.sqlite, which includes historical weather observations such as precipitation, temperature, and station information. The project uses SQLAlchemy's automap extension to reflect the database schema into Python classes, allowing for efficient querying of the data. The application was developed as part of a data analysis module focused on integrating databases with web frameworks.
+
+The API exposes several routes that return climate data in JSON format. The root route ("/") provides a list of all available endpoints. These include routes for precipitation data over the last 12 months, a list of weather stations, temperature observations from the most active station, and statistical summaries (minimum, average, and maximum temperatures) for a given start date or for a specific date range. All date-based routes accept dates in the format YYYY-MM-DD.
+
+The Flask application is contained in the app.py file. Supporting data is housed in the Resources folder. An exploratory notebook titled climate_starter.ipynb was used to analyze the dataset and determine relevant queries before building the API. To run the project locally, users should have Python installed along with the Flask and SQLAlchemy libraries. After navigating to the project directory, the application can be launched by running python app.py. Once running, the API is accessible in a web browser at http://127.0.0.1:5000/.
+
+Development tools such as GitHub Copilot and ChatGPT were used to assist with code generation, debugging, and documentation. These tools were valuable in resolving syntax issues and ensuring the API routes were implemented correctly.
+
+The project demonstrates a practical use case of building a RESTful API to interact with structured climate data. It can serve as a foundation for future data visualization projects, dashboards, or web-based climate tools.
